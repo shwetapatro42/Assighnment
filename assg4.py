@@ -1,7 +1,9 @@
-r = lambda a : a + 15
+nums = (1, 2, 3, 4, 5, 6, 7) 
 
-print(r(10))
+print("Original list: ", nums)
 
-r = lambda x, y : x * y
+result = map(lambda x: x + x + x, nums) 
 
-print(r(12, 4))
+print("\nTriple of said list numbers:")
+
+print(list(result))
